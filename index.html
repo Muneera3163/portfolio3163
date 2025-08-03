@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muneera's Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Muneera's Portfolio</div>
+        <div class="right">
+          <!-- Hamburger button for mobile -->
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home Section with Rotate Animation -->
+      <section id="home" class="firstsection card card-rotate">
+        <div class="leftsection">
+          Hi, my name is <span class="violet">Shaik Muneera</span> and I am a
+          passionate
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" alt="Developer" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- About Section with Slide In from Left -->
+      <section id="about" class="card card-left">
+        <h1>About Me</h1>
+        <p>
+          I am a dedicated and enthusiastic individual with a passion for
+          technology and innovation. Specializing in web development, I
+          continuously strive to learn and implement new skills to solve
+          real-world problems.
+        </p>
+      </section>
+
+      <!-- Education Section with Slide In from Right -->
+      <section id="education" class="card card-right">
+        <h1>Education</h1>
+        <ul>
+          <li>
+            <strong
+              >B.Tech in Computer Science and Artificial Intelligence</strong
+            >
+            from SVR Engineering College – <em>8.3 CGPA</em>
+          </li>
+          <li>
+            <strong>Intermediate</strong> from Rao's Junior College –
+            <em>96.4%</em>
+          </li>
+          <li>
+            <strong>SSC</strong> from Swami Vivekananda Vidyalaya –
+            <em>94.6%</em>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills Section with Descriptions and Progress Bars -->
+      <section id="skills" class="card card-left">
+        <h1>Skills</h1>
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>HTML</h3>
+              <p>
+                I have extensive experience in writing semantic and accessible
+                HTML.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>CSS</h3>
+              <p>
+                I design responsive and visually appealing websites using modern
+                CSS techniques.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>JavaScript</h3>
+              <p>
+                I build dynamic and interactive web applications using
+                JavaScript and libraries.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>Python</h3>
+              <p>
+                I use Python for scripting, data analysis, and backend
+                development projects.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>Java</h3>
+              <p>
+                I develop robust and scalable Java applications using
+                object-oriented principles.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>AWS Cloud Computing</h3>
+              <p>
+                I deploy and manage scalable cloud infrastructures using AWS
+                services.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+              <span class="skill-percent">60%</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <h3>Figma</h3>
+              <p>
+                I design intuitive user interfaces and prototypes using Figma.
+              </p>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certification Section (Text List) with Slide In from Right -->
+      <section id="certification" class="card card-right">
+        <h1>Certification</h1>
+        <ul>
+          <li>HTML &amp; CSS Certification</li>
+          <li>JavaScript Certification</li>
+          <li>Python Certification</li>
+          <li>Java Certification</li>
+          <li>AWS Cloud Computing Certification</li>
+          <li>Figma Certification</li>
+        </ul>
+      </section>
+
+      <!-- Certification Slider Section with Rotate Animation (Images) -->
+      <section id="certification-slider" class="card card-rotate">
+        <h1>Certificates</h1>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img
+                src="htmlandcss.jpeg"
+                alt="HTML &amp; CSS Certification"
+                class="slider-img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="javascript.jpeg"
+                alt="JavaScript Certification"
+                class="slider-img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="python.jpeg"
+                alt="Python Certification"
+                class="slider-img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="java.jpeg"
+                alt="Java Certification"
+                class="slider-img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="aws.jpeg"
+                alt="AWS Cloud Computing Certification"
+                class="slider-img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="Figma.jpeg"
+                alt="Figma Certification"
+                class="slider-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section with Slide In from Left -->
+      <section id="contact" class="card card-left">
+        <h1>Contact Me</h1>
+        <p>
+          Feel free to reach out via email:
+          <a href="mailto:22am1a3163@svrec.ac.in">22am1a3163@svrec.ac.in</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Typed.js for Dynamic Text -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Engineer", "Tech Enthusiast"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script>
+
+    <!-- Intersection Observer for Scroll Animations (Up & Down) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+        const observerOptions = { threshold: 0.2 };
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            } else {
+              entry.target.classList.remove("visible");
+            }
+          });
+        }, observerOptions);
+        cards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
+
+    <!-- Slider Functionality: Click on slider container to advance slide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        function updateSlider() {
+          slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        document
+          .querySelector(".slider-container")
+          .addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+          });
+        // Optional: Auto-slide every 5 seconds for a dynamic experience
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlider();
+        }, 5000);
+      });
+    </script>
+
+    <!-- Hamburger Menu Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

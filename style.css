@@ -1,0 +1,355 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff; /* White background */
+  color: #1d3557; /* Dark blue text */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: #f1faee; /* Light mint */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav .left {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+nav .right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Hamburger Menu (visible on mobile) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #1d3557;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Navigation Menu */
+#nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+#nav-menu li {
+  margin: 0 1rem;
+}
+
+#nav-menu li a {
+  color: #1d3557;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+#nav-menu li a:hover {
+  color: #457b9d;
+  border: 2px solid #a8dadc;
+  border-radius: 5px;
+}
+
+/* Main Content Margin */
+main {
+  margin-top: 100px;
+}
+
+/* Card Common Styles */
+.card {
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  background-color: #e9ecef; /* Light grey background for cards */
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 90%;
+  /* Enhanced card shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #1d3557;
+}
+
+/* Hover effect on cards */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Variations */
+/* Rotate Animation */
+.card-rotate {
+  transform: rotate(90deg);
+}
+
+/* Slide In from Left */
+.card-left {
+  transform: translateX(-100px);
+}
+
+/* Slide In from Right */
+.card-right {
+  transform: translateX(100px);
+}
+
+/* Visible state: resets transforms */
+.card.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Home Section Specific (Hero) */
+.firstsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.firstsection .leftsection {
+  flex: 1 1 300px;
+  font-size: 2.5rem;
+  margin: 1rem;
+  text-align: left;
+}
+.firstsection .rightsection {
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 1rem;
+}
+.firstsection .rightsection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Section Headings */
+section h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #a8dadc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* About Section Paragraph */
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Education & Certification Text Lists */
+#education ul,
+#certification ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+}
+#education li,
+#certification li {
+  background: rgba(29, 53, 87, 0.05);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+#education li:hover,
+#certification li:hover {
+  background: rgba(29, 53, 87, 0.1);
+  transform: scale(1.02);
+}
+
+/* Skills Section with Descriptions and Progress Bars */
+.skills-container {
+  margin: 1rem auto;
+  max-width: 800px;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(29, 53, 87, 0.1);
+  transition: transform 0.3s ease;
+}
+.skill-item:hover {
+  transform: scale(1.02);
+}
+.skill-info {
+  flex: 1;
+  text-align: left;
+}
+.skill-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.skill-info p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+}
+/* Container to hold the progress bar and percentage label outside */
+.skill-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 40%;
+}
+.skill-bar {
+  flex: 1;
+  background-color: rgba(29, 53, 87, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+.skill-progress {
+  height: 100%;
+  background-color: #2a9d8f;
+  transition: width 1s ease-in-out, background-color 0.3s ease;
+}
+.skill-bar:hover .skill-progress {
+  background-color: #21867a;
+}
+/* Percentage label displayed outside the progress bar */
+.skill-percent {
+  font-size: 0.8rem;
+  color: #1d3557;
+}
+
+/* Slider Styles for Certification Slider (Images) */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.slider-img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* Enhanced image shadow */
+  box-shadow: 0 8px 16px rgba(29, 53, 87, 0.3);
+}
+/* Hide sliding arrows completely */
+.slider-btn {
+  display: none;
+}
+
+/* Contact Section */
+#contact a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.violet {
+  color: #457b9d;
+}
+#element {
+  color: #1d3557;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Show hamburger and hide menu initially */
+  .hamburger {
+    display: block;
+  }
+  #nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f1faee;
+    transition: max-height 0.3s ease-out;
+    z-index: 999;
+  }
+  #nav-menu.active {
+    max-height: 300px;
+  }
+  nav ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  nav .right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .firstsection {
+    flex-direction: column;
+  }
+  .firstsection .leftsection,
+  .firstsection .rightsection {
+    text-align: center;
+  }
+  .card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  section h1 {
+    font-size: 2rem;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+  .slider-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .skills-container,
+  .skill-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skill-info,
+  .skill-bar-container {
+    width: 100%;
+  }
+  .skill-bar-container {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+  }
+}
